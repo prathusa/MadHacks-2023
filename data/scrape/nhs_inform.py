@@ -57,7 +57,8 @@ def main(url, filename):
         writer = csv.writer(f)
         writer.writerow(['key', 'text'])
         for key, text in d.items():
-            writer.writerow([key, text])
+            if text != '':
+                writer.writerow([key, text])
     
 if __name__ == '__main__':
     main('https://www.nhsinform.scot/illnesses-and-conditions/a-to-z', 'nhs_disease_data.json')
