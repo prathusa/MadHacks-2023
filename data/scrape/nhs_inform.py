@@ -23,14 +23,14 @@ def link_text(link):
     except:
         return ''
     soup = bs4.BeautifulSoup(r, 'html.parser')
-    content = soup.select('#maincontent > div > div > div.col.small-12.large-9.panel-content > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)')
+    content = soup.select('#maincontent > div > div > div.col.small-12.large-9.panel-content.push--bottom > div > div.js-guide.cf.guide > div:nth-child(2)')
     if len(content) == 0: return ''
     content = content[0].find_all('p')
     content = ' '.join([p.text for p in content])
     # res = content[0].text.encode('ascii', 'ignore').decode('ascii')
-    # res = unicodedata.normalize('NFKC', content).encode('ascii', 'ignore').decode('ascii')
-    # cleaned = res
-    cleaned = content
+    res = unicodedata.normalize('NFKC', content).encode('ascii', 'ignore').decode('ascii')
+    cleaned = res
+    # cleaned = content
     # cleaned = from_to(res, '\n\n\n\n', 'Find your local ')
     # cleaned = to(cleaned, 'Online appointment booking')
     # cleaned = exclude(cleaned, 'Online appointment booking', 'Book an appointment online')
@@ -40,7 +40,7 @@ def link_text(link):
 
 def main(url, filename):
     # print(links())
-    # print(link_text('https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/yellow-fever/'))
+    # print(link_text('https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/malaria/'))
     base = 'https://www.nhsinform.scot'
     # link = links()[308]
     # res = link_text(base+link)
