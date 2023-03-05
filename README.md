@@ -16,22 +16,22 @@ We used Next.js for the frontend and Supabase to host our PostgreSQL database ba
 
 ## Challenges we ran into
 
--Learning to use PostgreSQL
--Learning TailwindCSS and routing in React
--Finding a free service to host our PostgreSQL database(settled on Supabase)
--Initially used vanilla React before switching to Next.js to allow more flexibility in our workflow
+- Learning to use PostgreSQL
+- Learning TailwindCSS and routing in React
+- Finding a free service to host our PostgreSQL database(settled on Supabase)
+- Initially used vanilla React before switching to Next.js to allow more flexibility in our workflow
 
 ## Accomplishments that we're proud of
 
--Potential for scaling and growth
--Shipping a working product
+- Potential for scaling and growth
+- Shipping a working product
 
 ## What we learned
 
--PostgreSQL
--Supabase
--Routing in React
--TailwindCSS
+- PostgreSQL
+- Supabase
+- Routing in React
+- TailwindCSS
 
 ## What's next for Patient Health Log
 
