@@ -5,7 +5,7 @@ function Navbar()
 {
     return (
         <>
-            <nav className="z-100 fixed w-full bg-[#111155]">
+            <nav className="z-100 fixed w-full bg-[#ee9999]">
                 <div className="container mx-auto px-4 py-2 flex flex-row items-center justify-between">
                     <div className="text-white font-medium text-2xl px-2 py-2">Health Log</div>
                     
