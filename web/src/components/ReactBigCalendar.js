@@ -13,7 +13,7 @@ export default function ReactBigCalendar() {
   const handleSelect = ({ start, end }) => {
     console.log(start);
     console.log(end);
-    const title = window.prompt("New Event name");
+    const title = window.prompt("Add a symptom");
     if (title)
       setEventsData([
         ...eventsData,
@@ -25,9 +25,10 @@ export default function ReactBigCalendar() {
       ]);
   };
   return (
-    <div className="App">
+    <div className="shadow-lg py-10 mx-auto z-0 bg-[#fffafa] min-w-[50%] max-w-[50%]" >
       <Calendar
-        views={["day", "agenda", "work_week", "month"]}
+        // views={["day", "agenda", "work_week", "month"]}
+        views={["month"]}
         selectable
         localizer={localizer}
         defaultDate={new Date()}

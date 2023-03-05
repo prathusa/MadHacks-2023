@@ -37,9 +37,9 @@ function PatientList() {
       <div className="flex flex-wrap justify-start px-10 max-h-[30rem] overflow-y-auto">
         {patients.map((patient) => (
           <PatientListItem
-            // firstName={patient.FirstName}
-            // lastName={patient.LastName}
-            name={patient.FirstName + " " + patient.LastName}
+            firstName={patient.FirstName}
+            lastName={patient.LastName}
+            // name={patient.FirstName + " " + patient.LastName}
           />
         ))}
       </div>
