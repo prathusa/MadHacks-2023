@@ -16,9 +16,9 @@ function PatientListItem(props)
                     <p className="m-auto">{props.name}</p>
                 </a>
             </Link> */}
-            <a href='/doctor_patient' className="w-[200px] h-[100px] bg-[#ffdddd] flex rounded-lg mt-5 mx-2.5 active:bg-[#eecccc]">
+            <a href='/doctor_patient' className="w-[250px] h-[100px] bg-[#ffdddd] flex rounded-lg mt-5 mx-2.5 active:bg-[#eecccc]">
                 <img src={props.src ? props.src : d} alt={"image of " + props.name} className="m-3"></img>
-                <p className="m-auto">{props.name}</p>
+                <p className="m-auto mx-2">{props.name}</p>
             </a>
         </>
     );
