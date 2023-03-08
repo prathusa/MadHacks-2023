@@ -18,7 +18,7 @@ We used Next.js for the frontend and Supabase to host our PostgreSQL database ba
 
 - Learning to use PostgreSQL
 - Learning TailwindCSS and routing in React
-- Finding a free service to host our PostgreSQL database(settled on Supabase)
+- Finding a free service to host our PostgreSQL database (settled on Supabase)
 - Initially used vanilla React before switching to Next.js to allow more flexibility in our workflow
 
 ## Accomplishments that we're proud of
