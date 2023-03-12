@@ -12,8 +12,11 @@ export default function ReactBigCalendar() {
 
   const handleSelect = ({ start, end }) => {
     console.log(start);
+    if (start !== end)
+      end.setDate(end.getDate() + 1);
     console.log(end);
     const title = window.prompt("Add a symptom");
+    
     if (title)
       setEventsData([
         ...eventsData,
@@ -28,14 +31,18 @@ export default function ReactBigCalendar() {
     <div className="shadow-lg py-10 mx-auto z-0 bg-[#fffafa] min-w-[50%] max-w-[50%]" >
       <Calendar
         // views={["day", "agenda", "work_week", "month"]}
-        views={["month"]}
+        views={["day", "agenda", "month"]}
         selectable
         localizer={localizer}
         defaultDate={new Date()}
         defaultView="month"
         events={eventsData}
         style={{ height: "100vh" }}
-        onSelectEvent={(event) => alert(event.title)}
+        // onSelectEvent={(event) => {confirm('Confirm the deletion of ' + event.title + "?") ? setEventsData(eventsData.filter((e) => e !== event)) : ""}}
+        onSelectEvent={(event) => {
+          if (window.confirm('Confirm the deletion of ' + event.title + "?")) 
+            setEventsData(eventsData.filter((e) => e !== event))
+        }}
         onSelectSlot={handleSelect}
       />
     </div>
