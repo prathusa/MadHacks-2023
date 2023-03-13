@@ -14,9 +14,9 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/MadHacks-2023">
+      {/* <BrowserRouter > */}
         <Navbar />
-        <Router>
+        <Router basename="/MadHacks-2023">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/doctor" element={<Doctor />} />
@@ -24,7 +24,7 @@ function App() {
             <Route path="/doctor_patient" element={<PatientInfo />} />
           </Routes>
         </Router>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
     </>
   );
 }
