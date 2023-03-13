@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       {/* <BrowserRouter > */}
-        <Navbar />
         <Router basename="/MadHacks-2023">
+        <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/doctor" element={<Doctor />} />
