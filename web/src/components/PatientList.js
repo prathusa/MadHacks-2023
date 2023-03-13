@@ -23,7 +23,7 @@ function PatientList() {
       async function fetchPatients() {
         let { data, error } = await supabase
           .from('patients')
-          .select('FirstName, LastName')
+          .select('FirstName, LastName, ssn')
         if (error) {
           console.log(error)
           return
@@ -39,6 +39,7 @@ function PatientList() {
           <PatientListItem
             firstName={patient.FirstName}
             lastName={patient.LastName}
+            ssn={patient.ssn}
             // name={patient.FirstName + " " + patient.LastName}
           />
         ))}
