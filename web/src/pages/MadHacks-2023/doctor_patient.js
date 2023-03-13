@@ -1,7 +1,7 @@
 import React from "react";
-import PatientDesc from "../components/PatientDesc";
+import PatientDesc from "../../components/PatientDesc";
 import { useLocation } from 'react-router-dom';
-import ReactBigCalendar from "../components/ReactBigCalendar";
+import ReactBigCalendar from "../../components/ReactBigCalendar";
 
 var getParams = function (url) {
 	var params = {};
