@@ -16,9 +16,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/MadHacks-2023/" element={<Home />} />
-          <Route path="/doctor" element={<Doctor />} />
-          <Route path="/patient" element={<Patient />} />
-          <Route path="/doctor_patient" element={<PatientInfo />} />
+          <Route path="/MadHacks-2023/doctor" element={<Doctor />} />
+          <Route path="/MadHacks-2023/patient" element={<Patient />} />
+          <Route path="/MadHacks-2023/doctor_patient" element={<PatientInfo />} />
         </Routes>
       </Router>
       {/* </BrowserRouter> */}
