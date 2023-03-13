@@ -71,7 +71,20 @@ export default function ReactBigCalendar({ ssn }) {
         style={{ height: "100vh" }}
         onSelectEvent={(event) => {
           if (window.confirm('Confirm the deletion of ' + event.title + "?")) 
+          {
             setEventsData(eventsData.filter((e) => e !== event))
+            async function deleteEvent() {
+              let { data, error } = await supabase
+                .from('calendar')
+                .delete()
+                .eq('id', event.id)
+              if (error) {
+                console.log(error)
+                return
+              }
+            }
+            deleteEvent()
+          }
         }}
         onSelectSlot={handleSelect}
       />
