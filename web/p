@@ -1,4 +1,4 @@
-npm build deploy
+npm run deploy
 git add -A
 git commit -a -m "Test"
 git push

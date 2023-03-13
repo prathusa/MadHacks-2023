@@ -10,9 +10,9 @@ function Navbar()
                     <div className="text-white font-medium text-2xl px-2 py-2">Health Log</div>
                     
                     <div className="space-x-[2px]">
-                        <NavbarItem text="Home" link="/"/>
-                        <NavbarItem text="Doctor" link="/doctor"/>
-                        <NavbarItem text="Patient" link="/patient"/>
+                        <NavbarItem text="Home" link="/MadHacks-2023/"/>
+                        <NavbarItem text="Doctor" link="/MadHacks-2023/doctor"/>
+                        <NavbarItem text="Patient" link="/MadHacks-2023/patient"/>
                     </div>
                 </div>
             </nav>
