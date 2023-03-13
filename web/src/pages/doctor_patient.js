@@ -28,7 +28,6 @@ function PatientInfo(props)
                     ssn={parseInt(ssn)}
                 />
                 <PatientDesc />
-                {/* <PatientDesc name="test"/> */}
             </div>
         </>
     );
