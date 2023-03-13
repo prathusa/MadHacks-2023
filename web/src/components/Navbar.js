@@ -7,7 +7,7 @@ function Navbar()
         <>
             <nav className="z-[1000] fixed w-full bg-[#ee9999] shadow-lg">
                 <div className="container mx-auto px-4 py-2 flex flex-row items-center justify-between">
-                    <div className="text-white font-medium text-2xl px-2 py-2">Health Logg</div>
+                    <div className="text-white font-medium text-2xl px-2 py-2">Health Log</div>
                     
                     <div className="space-x-[2px]">
                         <NavbarItem text="Home" link="/MadHacks-2023/"/>
