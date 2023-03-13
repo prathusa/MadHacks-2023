@@ -1,7 +1,6 @@
 {
   "name": "web",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://prathusa.github.io/MadHacks-2023/",
   "dependencies": {
     "@fullcalendar/daygrid": "^5.7.0",

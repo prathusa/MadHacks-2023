@@ -1,5 +1,5 @@
 import React from "react";
-import PatientList from "../../components/PatientList";
+import PatientList from "../components/PatientList";
 
 function Doctor()
 {
