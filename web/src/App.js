@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Doctor from "./pages/MadHacks-2023/doctor";
-import Patient from "./pages/MadHacks-2023/patient";
-import Home from "./pages/MadHacks-2023/home"
-import PatientInfo from "./pages/MadHacks-2023/doctor_patient";
+import Doctor from "./pages/doctor";
+import Patient from "./pages/patient";
+import Home from "./pages/home"
+import PatientInfo from "./pages/doctor_patient";
 import Navbar from "./components/Navbar";
 // import './index.css'
 // import { useState, useEffect } from 'react'
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/doctor" element={<Doctor />} />
+          <Route path={`${process.env.PUBLIC_URL}+"/doctor"`} element={<Doctor />} />
           <Route path="/patient" element={<Patient />} />
           <Route path="/doctor_patient" element={<PatientInfo />} />
         </Routes>
