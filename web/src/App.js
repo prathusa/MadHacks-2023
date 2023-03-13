@@ -18,9 +18,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path={`${process.env.PUBLIC_URL}+"/doctor"`} element={<Doctor />} />
-          <Route path="/patient" element={<Patient />} />
-          <Route path="/doctor_patient" element={<PatientInfo />} />
+          <Route exact path={`${process.env.PUBLIC_URL}+"/doctor"`} element={<Doctor />} />
+          <Route exact path="/patient" element={<Patient />} />
+          <Route exact path="/doctor_patient" element={<PatientInfo />} />
         </Routes>
       </Router>
     </>
