@@ -1,5 +1,5 @@
 import React from "react";
-import ReactBigCalendar from "../components/ReactBigCalendar";
+import ReactBigCalendar from "../../components/ReactBigCalendar";
 
 function Patient()
 {
