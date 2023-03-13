@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MadHacks-2023/static/css/main.6ebb4f6b.css",
-    "main.js": "/MadHacks-2023/static/js/main.f66c618f.js",
+    "main.js": "/MadHacks-2023/static/js/main.81cfc340.js",
     "static/media/default.png": "/MadHacks-2023/static/media/default.d957592dfe7b632de567.png",
     "index.html": "/MadHacks-2023/index.html",
     "main.6ebb4f6b.css.map": "/MadHacks-2023/static/css/main.6ebb4f6b.css.map",
-    "main.f66c618f.js.map": "/MadHacks-2023/static/js/main.f66c618f.js.map"
+    "main.81cfc340.js.map": "/MadHacks-2023/static/js/main.81cfc340.js.map"
   },
   "entrypoints": [
     "static/css/main.6ebb4f6b.css",
-    "static/js/main.f66c618f.js"
+    "static/js/main.81cfc340.js"
   ]
 }
