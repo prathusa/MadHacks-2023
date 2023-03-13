@@ -19,7 +19,7 @@ function PatientListItem(props)
                     <p className="m-auto">{props.firstName + " " + props.lastName}</p>
                 </a> 
             </Link> */}
-            <a href={'/doctor_patient?ssn='+props.ssn} className="w-[250px] h-[100px] bg-[#ffdddd] flex rounded-lg mt-5 mx-2.5 active:bg-[#eecccc] shadow-lg">
+            <a href={'/MadHacks-2023/doctor_patient?ssn='+props.ssn} className="w-[250px] h-[100px] bg-[#ffdddd] flex rounded-lg mt-5 mx-2.5 active:bg-[#eecccc] shadow-lg">
                 <img src={props.src ? props.src : d} alt={"image of " + props.name} className="m-3"></img>
                 {/* <p className="m-auto mx-2">{props.name}</p> */}
                 <p className="m-auto mx-2">{props.firstName + " " + props.lastName}</p>
