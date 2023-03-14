@@ -7,7 +7,6 @@ function PatientDesc(props)
     // const lastName = props.location.lastName
     return (
         <>
-            {/* <Navbar /> */}
             <div className="w-[500px] max-w-[90%] h-[500px] bg-[#ffeeee] m-auto rounded-lg shadow-lg p-5 justify-left">
                 <p className="text-2xl">Patient</p>
                 <p className="">{props.name}</p>
