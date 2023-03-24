@@ -23,6 +23,7 @@ function Search()
           let { data, error } = await supabase
             .from('nhs_disease_data')
             .select('key, text')
+            .ilike('key, text', search == '' ? '' : '%' + search + '%')
           if (error) {
             console.log(error)
             return
@@ -30,28 +31,19 @@ function Search()
           setSearchResults(data)
         }
         fetchDiseases()
-        // console.log(searchResults);
-    }, [])
+    }, [search])
 
     return (
         <>
-            {/* <form> */}
-                <input className="bg-[#ffdcdc] rounded-xl min-w-[50rem] max-w-[50%] py-3 mx-auto text-center my-3 shadow-md border-pink-200 focus:border-white" value={search} type="text" placeholder="Search Diseases..." name="search" onChange={handleSearch}/>
-                {/* <input type="submit" className="hidden" /> */}
-                <div className="flex flex-col">
-                    {searchResults.filter((val) => {
-                    if (val.text.toLowerCase().includes(search.toLowerCase()))
-                    {
-                        return val;
-                    }
-                    }).map((val) => 
-                    {
-                        <SearchResultItem name={val.text} info={val.key} />
-                    })}
-                    <SearchResultItem name="test" info="test" />
-                </div>
-
-            {/* </form> */}
+            <input className="bg-[#ffdcdc] rounded-xl min-w-[50rem] max-w-[50%] py-3 mx-auto text-center my-3 shadow-md border-pink-200 focus:border-white" value={search} type="text" placeholder="Search for a disease..." name="search" onChange={handleSearch}/>
+            <div className="flex flex-col space-y-5">
+                {searchResults.map((disease) => (
+                    <SearchResultItem
+                        name={disease.key}
+                        info={disease.text}
+                    />
+                ))}
+            </div>
         </>
     );
 }
